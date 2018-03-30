@@ -13,7 +13,7 @@ Si l'écart est négatif, le vélo est plus rapide que la consigne -> l'induit e
 Sinon, une correction proportionnelle est appliquée selon échelle. 
 
 ### Calibration vitesse/consigne.
-Objectif : obtenir la droite vitesse/consigne (et surtout son équation)
+Processus pour obtenir la droite vitesse/consigne (et surtout son équation)
 
 - **Mesure** : utiliser le programme log_trhrottle_speed.ino et faire un ou plusieurs cycles d’accélération / décélération a vide. 
 Faire des cycles progressifs pour éviter le glissement du à l'inertie. 
