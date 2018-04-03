@@ -9,6 +9,9 @@ http://cyclurba.fr/forum/546584/automatisation-pilotage-d-induit-alternateur.htm
 
 PR bienvenues, partagez vos idées sur forum avant développement intensif :)
 
+### Méthodes. 
+Chaque méthode est une implémentation d'une idée pour contrôler au mieux l'alternateur. 
+- [M0](methodes/M0/readme.md) : Contrôle sur l'erreur consigne - vitesse
 
 ### Licence et auteurs
 
