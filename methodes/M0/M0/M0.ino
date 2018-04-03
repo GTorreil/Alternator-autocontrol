@@ -9,8 +9,9 @@
 
 #include "configuration.h"
 
+
 void setup() {
-  // put your setup code here, to run once:
+  #ifdef INDUIT_CONTROL_BRUSHED_ESC
 
 }
 
@@ -55,7 +56,13 @@ void appliquer_tension_induit(int Uinduit) {
   // Méthode DigitalPot
   /// NON FINALISE (j'attends encore mes digital pots..)
 #ifdef INDUIT_CONTROL_DIGITALPOT
-  Uinduit = map(Uinduit, 0, 255, 0, 100) // Passage en échelle 0~100 pour le pot
+  Uinduit = map(Uinduit, 0, 255, 0, 100); // Passage en échelle 0~100 pour le pot
+#endif
+
+  // Méthode Brushed ESC
+#ifdef INDUIT_CONTROL_BRUSHED_ESC
+  Uinduit = map(Uinduit, 0, 255, 0, 180); // Passage en échelle 0~180 pour l'esc
+  escInduit.write(Uinduit);
 #endif
 }
 

@@ -51,11 +51,13 @@
 
 /* Application de la tension à l'induit
 
-   Deux possibilités sont proposées.
+   Trois possibilités sont proposées.
    - Méthode direct-PWM :
      Pilotage à travers un transistor simple par PWM.
    - Méthode digitalPot : (PAS ENCORE DISPONIBLE)
      Pilotage à travers un potentiomètre numérique et un variateur du commerce.
+   - Méthode Brushed-ESC : (PAS ENCORE DISPONIBLE)
+     Pilotage à travers un ESC pour moteur DC. 
 */
 
 #define INDUIT_CONTROL_DIRECT_PWM
@@ -64,8 +66,17 @@
 #define PIN_INDUIT_CONTROL_DIRECT_PWM 3
 #endif
 
+
 //#define INDUIT_CONTROL_DIGITALPOT
 
 #ifdef INDUIT_CONTROL_DIGITALPOT
 //// DIGITAL POT CONFIG
+#endif
+
+
+//#define INDUIT_CONTROL_BRUSHED_ESC
+
+#ifdef INDUIT_CONTROL_BRUSHED_ESC
+#include "induit_control_brushed_esc.h"
+#define INDUIT_CONTROL_BRUSHED_ESC_PIN 3 // Conflit avec direct-PWM. Ne pas activer les deux 
 #endif
