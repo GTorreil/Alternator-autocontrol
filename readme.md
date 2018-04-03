@@ -6,7 +6,7 @@ Automatisation du pilotage d'induit sur un alternateur utilisé comme moteur.
 http://cyclurba.fr/forum/546584/automatisation-pilotage-d-induit-alternateur.html
 
 ### Qu'est-ce que c'est ? Comment ça marche ? 
-Allez voir le [Wiki](github.com/GTorreil/Alternator-autocontrol/wiki) pour plus d'informations ! 
+Allez voir le [Wiki](http://github.com/GTorreil/Alternator-autocontrol/wiki) pour plus d'informations ! 
 
 ### Contrib' 
 
