@@ -7,11 +7,7 @@
 
 */
 
-/*
-  200 bytes (chars) are reserved. Commands : do not exceed.
-*/
-#define MAX_COMMAND_SIZE 200
-#define SERIAL_BAUDRATE 115200
+
 
 enum CurrentSerialCommand
 {
