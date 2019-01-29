@@ -37,7 +37,6 @@ bool stringComplete = false;  // whether the string is complete
 void setup() {
 
   Serial.begin(SERIAL_BAUDRATE);
-  inputString.reserve(MAX_COMMAND_SIZE);
 }
 
 
