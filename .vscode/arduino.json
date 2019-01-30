@@ -1,4 +1,4 @@
 {
     "board": "arduino:avr:uno",
-    "sketch": "src/LUT_Prototype/embeddedBenchmark/embeddedBenchmark.ino"
+    "sketch": "src/main/main.ino"
 }

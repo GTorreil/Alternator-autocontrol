@@ -13,31 +13,22 @@ Commands definition
 - UL/DL : 
    UL = PC to TARGET. DL = TARGET to PC. 
 
-        !!!!
-
-!! MAKE AN ENUM WITH TIS !! 
-#defines may lead to conflicts? 
-
-        !!!!
-
 */ 
 
 const enum Serial_Command {
-        // Make that enum
-} serialCommand ;
+        NONE,
+        MAP32_UL,
+        MAP32_INDEX_UL,
+        MAP32_DL,
+        MAP32_INDEX_DL,
+        EEPROM_SAVE,
+        EEPROM_CLEAR,
+        HELP,
+} serialCommand = NONE ;
 
-// MAP32 Commands. 
-#define MAP32_UL 2
-#define MAP32_INDEX_UL 3
-#define MAP32_DL 4
-#define MAP32_INDEX_DL 5
+void serialProtocol_begin();
 
-// EEPROM Commands. 
-#define EEPROM_SAVE 10
-#define EEPROM_CLEAR 11
-
-// Misc Commands
-#define HELP 21
+void serial_loop();
 
 
 #endif
